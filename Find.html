@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>PAW | PetShop</title>
+    <script src="find.js"></script>
+    <link rel="icon" href="logo.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: rgb(210, 223, 195);
+            padding: 0;
+            margin: 0;
+
+            display: grid;
+            grid-template-columns: 15em calc(100vw - 15em);
+            grid-template-rows: 3.5em calc(100vh - 6.5em) 3em;
+        }
+
+        .header {
+            background-color: rgb(240, 240, 244);
+            width: 100%;
+            height: 60px;
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        .main {
+            width: 100%;
+            background:  rgb(240, 240, 244);
+            
+        }
+
+        .sidebar {
+            width: 15em;
+            background-color: rgb(196, 208, 215)
+        }
+
+        .sidebar header {
+            font-size: 22px;
+            color: rgb(226, 245, 245);
+            text-align: center;
+            line-height: 50px;
+            background-color: rgba(124, 138, 145);
+            user-select: none;
+
+        }
+
+        .sidebar ul a {
+            display: block;
+            text-align:left;
+            height: 20%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 15px;
+            color: rgb(90, 156, 156);
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(226, 219, 245, 0.926);
+            border-bottom: 1px solid rgb(168, 160, 202);
+            transition: .4s;
+
+        }
+
+        ul li:hover a {
+            padding-left: 50px;
+        }
+
+        .sidebar ul a i {
+            margin-right: 16px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: rgba(124, 138, 145);
+            text-align: center;
+            color: rgb(237, 235, 235);
+        }
+
+        .sidebar,
+        .main {
+            min-height: 900px
+        }
+        
+        .column {
+        padding: 5px;
+        background-color:rgba(227, 233, 236, 0.926);
+        width: 30%;
+        border: 10px solid rgba(211, 221, 227);
+        border-radius:10px;
+        float: left;
+                
+        }
+
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="header"><table><tr><td ><a href="PetShop.html"><img src="logo.png" alt="Dog and Cat logo"></a></td>
+        <td><h1>Paw PetSore</h1></td></tr></table></div>
+    <div class="sidebar">
+
+        <header>Menu</header>
+        <ul>
+                                <li><a href="PetShop.html">Home</a></li>
+                                <li><a href="Find.html">Find a dog/cat</a></li>
+                                <li><a href="DogCare.html">Dog Care</a></li>
+                                <li><a href="CatCare.html">Cat Care</a></li>
+                                <li><a href="Signup.php">Sign Up</a></li>
+                                <li><a href="signin.php">Sign in </a></li>
+                                <li><a href="Give.php">Have a Pet to Give Away</a></li>
+                                <li><a href="logout.php">Log Out</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+                        
+    </div>
+
+    <div class="main">
+
+       <div class="row" >
+                <div class="column" style=" margin-right:20%">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="dane.png" alt="Grand Dane" style="width:10%">
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td><p><b>Type:</b> Dog<br>
+                                <b>Breed:</b> Grand Dane<br>
+                                <b>Gender:</b> Female<br>
+                                <b>Age:</b> 3 years old<br>
+                                <b>Relationships: </b>Gets along with young kids & other dogs<br>
+                                <b>About her: </b>She loves cuddles and running at the beach, she's very sweet with the kids!</p>
+                                <input type="submit" value="Interested"></td>
+                                
+                        </tr>
+                    </table>
+                  
+                </div>
+                <div class="column">
+                    <table>
+                        <tr>
+                            <td>
+                  <img src="dalmatian.png" alt="dalmatian" style="width:10%">
+                </td>
+                            
+            </tr>
+
+            <tr>
+                <td><p><b>Type:</b> Dog<br>
+                    <b>Breed:</b> Dalmatian<br>
+                    <b>Gender:</b> Male<br>
+                    <b>Age:</b> 5 years old<br>
+                    <b>Relationships: </b>Gets along with young kids<br>
+                    <b>About him: </b>He enjoys going to the park and he's very attentive at home!</p>
+                    <input type="submit" value="Interested"></td>
+                    
+            </tr>
+        </table>
+                </div>
+                
+        </div>
+              
+        <div class="row" >
+        <div class="column" style=" margin-right:20%">
+            <table>
+                <tr>
+                    <td>
+                    <img src="persian.png" alt="Persian Cat" style="width:10%" >
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                <td><p><b>Type:</b> Cat<br>
+                <b>Breed:</b> Persian Cat<br>
+                <b>Gender:</b> Male<br>
+                <b>Age:</b> 2 years old<br>
+                <b>Relationships: </b>Gets along with young kids and other cats<br>
+                <b>About him: </b>He enjoys naps and he's very cuddly!</p>
+                <input type="submit" value="Interested"></td>
+                
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+            <tr>
+                <td>
+                    <img src="jap.png" alt="Japanese Bobtail" style="width:10%">
+                </td>
+                
+            </tr>
+
+            <tr>
+            <td><p><b>Type:</b> Cat<br>
+            <b>Breed:</b> Japanese Bobtail<br>
+            <b>Gender:</b> Female<br>
+            <b>Age:</b> 3 years old<br>
+            <b>Relationships: </b>Gets along with other cats & dogs<br>             
+            <b>About her: </b>She's very calm and barely causes any mess!</p>
+            <input type="submit" value="Interested"></td>
+            
+            </tr>
+            </table>
+        </div>
+        
+        </div>
+        
+        <div>
+          <form name="myForm" onsubmit="return validateForm()" method="post">
+            <fieldset id="field2">
+            <legend id="legend1"><b>Find a Pet</b></legend>
+           <br>
+            <b>Type of Pet:</b>
+            <input type="radio" id="dog" name="type" value="Dog">
+            <label for="female">Dog</label>
+            <input type="radio" id="cat" name="type" value="Cat">
+            <label for="male">Cat</label><br><br>
+
+
+            <b>Breed of cat or dog</b><br><br>
+
+            <input type="checkbox" id="black" name="breed" value="black">
+            <label for="black"> Black cat</label>
+            <input type="checkbox" id="red" name="breed" value="Red spotted">
+            <label for="red"> Red spotted</label>
+            <input type="checkbox" id="jap" name="breed" value="Japanese bobtail">
+            <label for="jap">Japanese bobtail</label><br>
+            <input type="checkbox" id="chi" name="breed" value="chihuaha">
+            <label for="chi">chihuaha</label>
+            <input type="checkbox" id="dobe" name="breed" value="dobermann">
+            <label for="dobe">Dobermann</label>
+            <input type="checkbox" id="husky" name="breed" value="husky">
+            <label for="husky">Husky</label><br>
+            <input type="checkbox" id="oth" name="breed" value="Other">
+            <label for="oth">Doesn't matter</label><br><br>
+            
+            <b>Gender:</b> 
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="nomatter" name="gender" value="Doesn'tmatter">
+            <label for="nomatter">Doesn't matter</label><br><br>
+            <label for="age"><b>Preferred age of animal</b></label>
+            <select name="age" id="age">
+                <option value="less1">0-1</option>
+                <option value="26">2-6</option>
+                <option value="711">7-11</option>
+                <option value="1216">12-16</option>
+                <option value="1620">16-20</option>
+                <option value="nopref">doesn't matter</option>
+            </select><br><br>
+
+           <b>Does it need to get along with?</b><br>
+            <input type="checkbox" id="cats" name="along" value="cats">
+            <label for="cats"> other cats</label>
+            <input type="checkbox" id="dogs" name="along" value="dogs">
+            <label for="dogs"> other dogs</label>
+            <input type="checkbox" id="kids" name="along" value="kids">
+            <label for="kids">small children</label><br><br>
+
+             
+        </fieldset>
+    </div>
+    <input type="submit" value="Submit" onclick="Validate()"> <input type="reset" value="Clear">
+          </form>
+          <p>Thank you for taking the time to fill out the form!</p><br>
+        
+   </div>
+   
+    <div><footer class="footer">
+    <p>  Copyright&copy; 2023&nbsp;Paw PetShop&nbsp;All Rights Reserved</p>
+    <p><a href="Find.html" onclick="myFunction()">Privacy Policy</a> 
+    </p></footer></div>
+  
+      
+    </body>
+
+
+
+</html>

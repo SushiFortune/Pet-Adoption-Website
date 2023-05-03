@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>PAW | PetShop</title>
+    <link rel="icon" href="logo.png">
+    <script>
+        function myFunction() {
+          alert("This is a privacy statement to assure you that your information will not be sold or misused, and the website builder protects you from falsified information.");
+        }
+        </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: rgb(210, 223, 195);
+            padding: 0;
+            margin: 0;
+
+            display: grid;
+            grid-template-columns: 15em calc(100vw - 15em);
+            grid-template-rows: 3.5em calc(100vh - 6.5em) 3em;
+        }
+
+        .header {
+            background-color: rgb(240, 240, 244);
+            width: 100%;
+            height: 60px;
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        .main {
+            width: 100%;
+            background:  rgb(240, 240, 244);
+            
+        }
+
+        .sidebar {
+            width: 15em;
+            background-color: rgb(196, 208, 215)
+        }
+
+        .sidebar header {
+            font-size: 22px;
+            color: rgb(226, 245, 245);
+            text-align: center;
+            line-height: 50px;
+            background-color: rgba(124, 138, 145);
+            user-select: none;
+
+        }
+
+        .sidebar ul a {
+            display: block;
+            text-align:left;
+            height: 20%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 15px;
+            color: rgb(90, 156, 156);
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(226, 219, 245, 0.926);
+            border-bottom: 1px solid rgb(168, 160, 202);
+            transition: .4s;
+
+        }
+
+        ul li:hover a {
+            padding-left: 50px;
+        }
+
+        .sidebar ul a i {
+            margin-right: 16px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            color: rgb(237, 235, 235);
+            background-color: rgba(124, 138, 145);
+        }
+
+        .sidebar,
+        .main {
+            min-height: 900px
+        }
+        
+        </style>
+
+     
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="header"><table><tr><td ><a href="PetShop.html"><img src="logo.png" alt="Dog and Cat logo"></a></td>
+        <td><h1>Paw PetSore</h1></td></tr></table></div>
+    <div class="sidebar">
+
+        <header>Menu</header>
+        <ul>
+                                   <li><a href="PetShop.html">Home</a></li>
+                                <li><a href="Find.html">Find a dog/cat</a></li>
+                                <li><a href="DogCare.html">Dog Care</a></li>
+                                <li><a href="CatCare.html">Cat Care</a></li>
+                                <li><a href="Signup.php">Sign Up</a></li>
+                                <li><a href="signin.php">Sign in </a></li>
+                                <li><a href="Give.php">Have a Pet to Give Away</a></li>
+                                <li><a href="logout.php">Log Out</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+                        
+    </div>
+    <div class="main">
+        <h1>Dog Care</h1><br>
+        <div>
+            <h3>Nutrition</h3>
+            <table>
+                <tr><td><a href="https://vcahospitals.com/know-your-pet/nutrition-general-feeding-guidelines-for-dogs">General Nutrition Guidelines</a></td></tr>
+                <tr><td><a href="https://www.thedogbakery.com/blogs/news/top-20-healthy-homemade-dog-food-recipes-your-dog-will-love">Recipes</a></td></tr>
+                <tr><td><a href="https://www.rspcasa.org.au/what-not-to-feed-dogs/">Food to Avoid</a></td></tr>
+            </table><br>
+            
+        </div>
+        <div><h3>Health & Hygiene</h3>
+            <table>
+           
+            <tr><td><a href="https://www.akc.org/expert-advice/health/how-to-groom-a-dog/">Dog Grooming</a></td></tr>
+            <tr><td><a href="https://www.petsmart.com/dog/grooming-supplies/">Dog Grooming Tools</a></td></tr>
+            <tr><td><a href="https://www.aspca.org/pet-care/dog-care/common-dog-diseases"> Dog Diseases and Symptoms</a></td></tr>
+            </table><br></div>
+        <div><h3>Activities</h3><table>
+        <tr><td><a href="https://www.care.com/c/101-things-to-do-with-your-dog/">Outdoor and Indoor Activities</a></td></tr>
+        <tr><td><a href="https://www.chewy.com/b/toys-315"> Toys</a></td></tr>
+        <tr><td><a href="https://www.thesprucepets.com/steps-to-train-your-dog-1118273"> Training</a></td></tr>
+        </table><br></div>
+    </div>
+    <div><footer class="footer">
+        <p>  Copyright&copy; 2023&nbsp;Paw PetShop&nbsp;All Rights Reserved</p>
+        <p><a href="DogCare.html" onclick="myFunction()">Privacy Policy</a>
+        </p></footer></div>
+      
+    
+       
+        
+    
+          
+        </body>
+    </html>
+    

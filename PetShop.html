@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>PAW | PetShop</title>
+    <link rel="icon" href="logo.png">
+    
+    <script src="shop.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: rgb(210, 223, 195);
+            padding: 0;
+            margin: 0;
+
+            display: grid;
+            grid-template-columns: 15em calc(100vw - 15em);
+            grid-template-rows: 3.5em calc(100vh - 6.5em) 3em;
+        }
+
+        .header {
+            background-color:  rgb(240, 240, 244);
+            width: 100%;
+            height: 60px;
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        .main {
+            width: 100%;
+            background:  rgb(240, 240, 244);
+            
+        }
+
+        .sidebar {
+            width: 15em;
+            background-color: rgb(196, 208, 215)
+        }
+
+        .sidebar header {
+            font-size: 22px;
+            color: rgb(226, 245, 245);
+            text-align: center;
+            line-height: 50px;
+            background-color: rgba(124, 138, 145);
+            user-select: none;
+
+        }
+
+        .sidebar ul a {
+            display: block;
+            text-align:left;
+            height: 20%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 15px;
+            color: rgb(90, 156, 156);
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(226, 219, 245, 0.926);
+            border-bottom: 1px solid rgb(168, 160, 202);
+            transition: .4s;
+
+        }
+
+        ul li:hover a {
+            padding-left: 50px;
+        }
+      
+        .sidebar ul a i {
+            margin-right: 16px;
+        }
+
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: rgba(124, 138, 145);
+            text-align: center;
+            color: rgb(237, 235, 235);
+        }
+
+        .sidebar,
+        .main {
+            min-height: 900px
+        }
+        .container {
+        position: relative;
+        text-align: center;
+        color: whitesmoke;
+        }
+        .centered {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+}
+
+.bottom-right{
+    position: absolute;
+        top: 90%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+        font-size: 10px;
+
+}
+
+        .mission{
+        background-color:rgba(227, 233, 236, 0.926);
+        width: 300px;
+        border: 25px solid rgba(211, 221, 227);
+        padding: 50px;
+        margin-left: 100px;
+        border-radius:25px;
+         
+    }
+
+    .services{
+        background-color:rgba(227, 233, 236, 0.926);
+        width: 300px;
+        border: 25px solid rgba(211, 221, 227, 0.926);
+        padding: 50px;
+        margin-left: 150px;
+        border-radius:25px;
+    }   
+    </style>
+
+</head>
+
+<body onload = "getCurrentDate()" style="background-color: rgb(255, 255, 255);">
+<div class="header">
+    <table>
+    <tr>
+    <td ><a href="PetShop.html"><img src="logo.png" alt="Dog and Cat logo"></a></td>
+    <td><h1>Paw PetSore</h1></td>
+    <td><p id="dem" style="margin-left:900px;">ejhfdbkfn</p></td>
+    </tr>
+    
+    </table>
+   
+
+</div>
+    
+<div class="sidebar">
+
+        <header>Menu</header>
+        <ul>
+                                   <li><a href="PetShop.html">Home</a></li>
+                                <li><a href="Find.html">Find a dog/cat</a></li>
+                                <li><a href="DogCare.html">Dog Care</a></li>
+                                <li><a href="CatCare.html">Cat Care</a></li>
+                                <li><a href="Signup.php">Sign Up</a></li>
+                                <li><a href="signin.php">Sign in </a></li>
+                                <li><a href="Give.php">Have a Pet to Give Away</a></li>
+                                <li><a href="logout.php">Log Out</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+                        
+    </div>
+
+    
+    <div class="main">
+        <div class="container">
+
+          <img src="dogcats.PNG" style="width: 100%;height: 400px;" alt="Dog and cat">
+          <div class="centered"><b>Adopt a new bestfriend!</b> </div>
+          <div class="bottom-right">Source:canva.com</div>
+          
+        </div><br>
+        
+        <div>
+        <table>
+        <tr>
+        <td>
+        <div class="mission">
+            <h1 style="text-align:center;">Our Mission</h1><br>
+            <p> Our mission is to offer a safe home for pets in need. While a pet lover may be looking to add a new member to their family, one may be looking for a ew pet owner to take over the care of their pet. 
+                In the past 10 years, Paw PetShop matched 10,000 pets with fun-loving owners and is planning to increase that number!
+        </p>
+    </div>
+    </td>
+    <td>
+        <div class="services">
+            
+            <h1 style="text-align:center;">What We Offer</h1><br>
+            <p>For pet lovers looking to adopt, we offer you the chance to get matched with your dream pet, the tools and guidelines to create a safe home for your dog or cat. 
+                If you're looking to put your pet up for adoption, our website will faciliate the process to make sure your pet ends up in good hands.
+        </p>
+            </div>
+    </td>
+    </tr>
+</table>
+</div>
+      
+            
+   </div>
+   
+   <div><footer class="footer">
+    <p>  Copyright&copy; 2023&nbsp;Paw PetShop&nbsp;All Rights Reserved</p>
+    <p><a href="PetShop.html" onclick="myFunction()">Privacy Policy</a>
+    </p></footer></div>
+  
+
+      
+    </body>
+</html>
